@@ -1,0 +1,85 @@
+body {
+    margin: 0 auto;
+    display: flex;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.informations, .projects {
+    height: 100vh;
+}
+
+.informations .pink-box {
+    background: #ff1d4d;
+}
+
+.informations {
+    background: #1c202b;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.informations .head .job {
+    font-style: italic;
+    padding: .5rem .75rem;
+}
+
+.informations .motto p:first-child span {
+    color: #ff1d4d;
+    font-weight: 600;
+}
+
+.informations .motto p:last-child span {
+    text-decoration: underline;
+}
+
+.informations .separator {
+    width: 5%;
+    height: 4px;
+    background: #ff1d4d;
+}
+
+.informations .construction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.informations .construction p {
+    color: #bbbab8;
+    font-weight: 600;
+}
+
+.informations .construction .cv {
+    font-weight: 700;
+    padding: .75rem 1rem;
+    font-size: 1.05rem;
+}
+
+.informations .email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.informations .email .round-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100%;
+    border: 2px solid #ff1d4d;
+}
+
+.projects {
+    background: #f4f4f4;
+    width: 60%;
+}
