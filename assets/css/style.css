@@ -1,3 +1,5 @@
+/* GENERAL */
+
 body {
     margin: 0 auto;
     display: flex;
@@ -16,6 +18,8 @@ a {
 .informations .pink-box {
     background: #ff1d4d;
 }
+
+/* LEFT SIDE */
 
 .informations {
     background: #1c202b;
@@ -79,7 +83,16 @@ a {
     border: 2px solid #ff1d4d;
 }
 
+/* RIGHT SIDE */
+
 .projects {
     background: #f4f4f4;
     width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects .item {
+    width: 50%;
+    height: 33.33%;
 }
