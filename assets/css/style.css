@@ -1,9 +1,63 @@
+/* FONTS */
+
+/* Roboto */
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url("../fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url("../fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url("../fonts/Roboto-Bold.ttf");
+}
+
+/* Raleway */
+
+@font-face {
+    font-family: 'Raleway Medium';
+    src: url("../fonts/Raleway-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Raleway SemiBold';
+    src: url("../fonts/Raleway-SemiBold.ttf");
+}
+
+/* NotoSansHK */
+
+@font-face {
+    font-family: 'NotoSans Light';
+    src: url("../fonts/NotoSansHK-Light.otf");
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    src: url("../fonts/NotoSansHK-Regular.otf");
+}
+
+@font-face {
+    font-family: 'NotoSans Bold';
+    src: url("../fonts/NotoSansHK-Bold.otf");
+}
+
 /* GENERAL */
 
 body {
     margin: 0 auto;
     display: flex;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -31,9 +85,34 @@ a {
     text-align: center;
 }
 
+.informations .head {
+    margin-bottom: 8.5%;
+}
+
+.informations .head h1 {
+    font-family: 'NotoSans Light', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    line-height: 2.6rem;
+}
+
+.informations .head h1 span {
+    font-family: 'NotoSans Bold', sans-serif;
+    font-size: 3rem;
+}
+
 .informations .head .job {
     font-style: italic;
     padding: .5rem .75rem;
+    font-family: 'Roboto Light', sans-serif;
+}
+
+.informations .motto p {
+    margin: 0;
+}
+
+.informations .motto p:first-child {
+    margin-bottom: .25rem;
 }
 
 .informations .motto p:first-child span {
@@ -49,6 +128,7 @@ a {
     width: 5%;
     height: 4px;
     background: #ff1d4d;
+    margin: 8.5% 0 4.5%;
 }
 
 .informations .construction {
@@ -56,6 +136,11 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Raleway Medium', sans-serif;
+}
+
+.informations .construction p:first-child {
+    margin-bottom: 0;
 }
 
 .informations .construction p {
@@ -63,10 +148,13 @@ a {
     font-weight: 600;
 }
 
+.informations .construction a {
+    margin: 6% 0 30%;
+}
+
 .informations .construction .cv {
     font-weight: 700;
     padding: .75rem 1rem;
-    font-size: 1.05rem;
 }
 
 .informations .email {
@@ -74,6 +162,13 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'NotoSans', sans-serif;
+    position: relative;
+    top: 5%;
+}
+
+.informations .email img {
+    width: 12px;
 }
 
 .informations .email .round-icon {
@@ -81,6 +176,10 @@ a {
     width: 1.5rem;
     border-radius: 100%;
     border: 2px solid #ff1d4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .25rem;
 }
 
 /* RIGHT SIDE */
