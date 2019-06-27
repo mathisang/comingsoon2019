@@ -1,5 +1,12 @@
 /* FONTS */
 
+/* KoHo */
+
+@font-face {
+    font-family: 'Koho Italic';
+    src: url("../fonts/KoHo-Italic.ttf");
+}
+
 /* Roboto */
 
 @font-face {
@@ -17,21 +24,11 @@
     src: url("../fonts/Roboto-Medium.ttf");
 }
 
-@font-face {
-    font-family: 'Roboto Bold';
-    src: url("../fonts/Roboto-Bold.ttf");
-}
-
 /* Raleway */
 
 @font-face {
     font-family: 'Raleway Medium';
     src: url("../fonts/Raleway-Medium.ttf");
-}
-
-@font-face {
-    font-family: 'Raleway SemiBold';
-    src: url("../fonts/Raleway-SemiBold.ttf");
 }
 
 /* NotoSansHK */
@@ -58,6 +55,7 @@ body {
     display: flex;
     color: white;
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
 
 a {
@@ -102,9 +100,8 @@ a {
 }
 
 .informations .head .job {
-    font-style: italic;
     padding: .5rem .75rem;
-    font-family: 'Roboto Light', sans-serif;
+    font-family: 'Koho Italic', sans-serif;
 }
 
 .informations .motto p {
@@ -200,35 +197,47 @@ a {
 }
 
 .projects .item {
-    width: 49.8262%;
-    height: 33.156%;
-    border: 1px solid #1c202b;
+    width: 50%;
+    height: 33.33333333%;
     display: flex;
     transition: all .3s ease;
+    text-align: center;
 }
 
 .projects .item:nth-child(1) {
-    background: red;
+    background: url('../images/ramonage.jpg');
+    background-size: cover;
+    background-position-x: center;
 }
 
 .projects .item:nth-child(2) {
-    background: orange;
+    background: url('../images/leadsempire.jpg');
+    background-size: cover;
+    background-position-x: center;
 }
 
 .projects .item:nth-child(3) {
-    background: orangered;
+    background: url('../images/catberro.jpg');
+    background-size: cover;
+    background-position-x: center;
 }
 
 .projects .item:nth-child(4) {
-    background: blue;
+    background: url('../images/sodc.jpg');
+    background-size: cover;
+    background-position-x: center;
 }
 
 .projects .item:nth-child(5) {
-    background: cyan;
+    background: url('../images/worldcup.jpg');
+    background-size: cover;
+    background-position-x: center;
 }
 
 .projects .item:nth-child(6) {
-    background: green;
+    background: url('../images/ohc.jpg');
+    background-size: cover;
+    background-position-x: center;
 }
 
 .projects .overlay {
@@ -282,4 +291,18 @@ a {
 .projects .overlay .more:hover {
     background: #ffffff;
     color: #1c202b;
+}
+
+#one-project {
+    background: #efefef;
+    height: 100vh;
+    width: 60%;
+    position: absolute;
+    right: -60%;
+    top: 0;
+    z-index: 999;
+}
+
+#one-project .back {
+    cursor: pointer;
 }
