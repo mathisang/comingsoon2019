@@ -44,6 +44,11 @@
 }
 
 @font-face {
+    font-family: 'NotoSans Medium';
+    src: url("../fonts/NotoSansHK-Medium.otf");
+}
+
+@font-face {
     font-family: 'NotoSans Bold';
     src: url("../fonts/NotoSansHK-Bold.otf");
 }
@@ -158,6 +163,22 @@ a {
     padding: .75rem 1rem;
 }
 
+.informations .buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.informations .social {
+    font-weight: 700;
+    padding: .65rem 1rem;
+    border: 2px solid #ff1d4d;
+}
+
+.informations .social:hover {
+    background: rgba(255, 255, 255, .05);
+}
+
 .informations .email {
     display: flex;
     flex-direction: column;
@@ -205,37 +226,37 @@ a {
 }
 
 .projects .item:nth-child(1) {
-    background: url('../images/ramonage.jpg');
+    background: url('../images/ramonage/projet.jpg');
     background-size: cover;
     background-position-x: center;
 }
 
 .projects .item:nth-child(2) {
-    background: url('../images/leadsempire.jpg');
+    background: url('../images/leadsempire/projet.jpg');
     background-size: cover;
     background-position-x: center;
 }
 
 .projects .item:nth-child(3) {
-    background: url('../images/catberro.jpg');
+    background: url('../images/catberro/projet.jpg');
     background-size: cover;
     background-position-x: center;
 }
 
 .projects .item:nth-child(4) {
-    background: url('../images/sodc.jpg');
+    background: url('../images/sodc/projet.jpg');
     background-size: cover;
     background-position-x: center;
 }
 
 .projects .item:nth-child(5) {
-    background: url('../images/worldcup.jpg');
+    background: url('../images/worldcup/projet.jpg');
     background-size: cover;
     background-position-x: center;
 }
 
 .projects .item:nth-child(6) {
-    background: url('../images/ohc.jpg');
+    background: url('../images/ohc/projet.jpg');
     background-size: cover;
     background-position-x: center;
 }
@@ -301,8 +322,116 @@ a {
     right: -60%;
     top: 0;
     z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1c202b;
 }
 
-#one-project .back {
+#one-project h2, #one-project h3 {
+    font-family: 'NotoSans Medium';
+    font-size: 1.9rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#one-project>div {
+    width: 95%;
+}
+
+#one-project .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#one-project>hr {
+    width: 95%;
+}
+
+#one-project hr {
+    border: 1px solid #d6d6d6;
+}
+
+#one-project .images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .35rem;
+}
+
+#one-project .images>div {
+    width: 49.5%;
+}
+
+#one-project .images img {
+    width: 100%;
+}
+
+#one-project .infos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#one-project .left-row {
+    width: 63%;
+}
+
+#one-project .right-row {
+    width: 33%;
+}
+
+#one-project h3 {
+    font-size: 1.3rem;
+}
+
+#one-project .infos hr {
+    margin-bottom: 1rem;
+}
+
+#one-project .infos>div p {
+    color: #818181;
+    font-family: 'Raleway', sans-serif;
+    font-size: .96rem;
+    margin: .25rem 0;
+}
+
+#one-project #l-description {
+    line-height: 1.34;
+}
+
+#one-project .infos .left-row span, #one-project .infos .right-row p:last-child {
+    font-style: italic;
+}
+
+#one-project .infos .right-row .underline {
+    text-decoration: underline;
+}
+
+#one-project .infos #r-year, #one-project .infos #r-type {
+    text-decoration: none !important;
+    font-family: 'Raleway Medium', sans-serif;
+}
+
+#one-project .infos .right-row p:last-child {
+    font-style: italic;
+}
+
+#one-project .infos #r-project {
+    color: #ff1d4d;
+}
+
+#one-project .head .back {
     cursor: pointer;
+    border: 1px solid #cecece;
+    font-size: .9rem;
+    padding: .5rem 1rem;
+    color: #b9b9b9;
+    transition: all .5s ease;
+}
+
+#one-project .head .back:hover {
+    border: 1px solid #ff1d4d;
+    color: #ff1d4d;
 }
